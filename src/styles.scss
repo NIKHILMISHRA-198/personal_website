@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Archivo+Black&display=swap');
 
 :root {
-  --primary-bg: #323232;  /* Soft neutral gray */
-  --secondary-bg: #222;   /* Almost black */
-  --text-color: #111;     /* Dark gray for better readability */
-  --accent-color: #ff5959; /* Soft but bold red */
-  --border-radius: 6px;   /* Minimal rounded edges */
+  --primary-bg: #1A1A1A;      /* Darker gray for a bold neo-brutalist base */
+  --secondary-bg: #2D2D2D;    /* Slightly lighter gray for contrast */
+  --text-color-light: #000;   /* Black for light backgrounds */
+  --text-color-dark: #F0F0F0; /* Off-white for dark backgrounds */
+  --accent-color: #ffe787;    /* Bold orange-red for neo-brutalist punch */
+  --neo-shadow: 8px 8px 0px #000; /* Heavy shadow for depth */
+  --neo-border: 4px solid #000;   /* Thick border for rawness */
+  --border-radius: 0px;       /* Sharp edges for neo-brutalism */
 }
 
 * {
@@ -16,7 +19,20 @@
 }
 
 body {
-    padding: 1%;
+  padding: 2rem;             /* Chunkier padding for a bolder layout */
   background: var(--primary-bg);
-  color: var(--text-color);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+}
+
+/* Ensure links are styled globally */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-color-dark);
 }
