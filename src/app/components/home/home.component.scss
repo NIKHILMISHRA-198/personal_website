@@ -1,0 +1,31 @@
+section {
+    background: rgb(163, 163, 163);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0px black;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--text-color);
+    padding-bottom: 8px;
+    display: inline-block;
+    transform: rotate(-1deg);
+    margin-bottom: 2%;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
